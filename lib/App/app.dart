@@ -273,7 +273,9 @@ print(result[2]);
               android: AndroidNotificationDetails(
                 channel.id,
                 channel.name,
-                sound: RawResourceAndroidNotificationSound(""),
+                playSound: true,
+                
+                sound: RawResourceAndroidNotificationSound("notification"),
 
                 channelDescription: channel.description,
 

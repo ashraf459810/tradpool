@@ -22,6 +22,7 @@ import 'package:tradpool/features/notifications/presentation/bloc/notifications_
 
 import 'package:tradpool/features/search/presentation/pages/search.dart';
 import 'package:url_launcher/url_launcher.dart';
+import '../../../../App/app_localizations.dart';
 import '../../../../injection_container.dart';
 
 
@@ -158,7 +159,7 @@ class _HomeState extends State<Home>  with SingleTickerProviderStateMixin {
                             "https://"+ item.website,
                             universalLinksOnly: true,
                           );
-                                },child: container(color: Colors.black,hight: h(40),width: w(80),borderRadius: 5,child: text(text: 'Visit WebSite',color: Colors.white,fontsize: 11.sp)))),
+                                },child: container(color: Colors.black,hight: h(40),width: w(80),borderRadius: 5,child: text(text:  AppLocalizations.of(context).translate('Visit website'),color: Colors.white,fontsize: 11.sp)))),
 
                                                                   Positioned(
                                   bottom: h(15),
